@@ -37,7 +37,7 @@ Expects user information, with the following fields:
         "groups": ["admins", "users"]
     }
 
-Accepts either a `JSON` payload, in the format above, or a standard paramater payload. `userid` is required. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute.
+Accepts either a `JSON` payload, in the format above, or standard form data. `userid` is required. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute.
 
 ## `PUT /users/<userid>` ##
 Expects user information, with the following fields:
@@ -48,7 +48,7 @@ Expects user information, with the following fields:
         "groups": ["admins", "users"]
     }
 
-Accepts either a `JSON` payload, in the format above, or a standard paramater payload. Replaces current user info with new data. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute. Will return `404` if user doesn't already exist.
+Accepts either a `JSON` payload, in the format above, or standard form data. Replaces current user info with new data. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute. Will return `404` if user doesn't already exist.
 
 ## `DELETE /users/<userid>` ##
 Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute. Will return `404` if user doesn't already exist.
@@ -63,7 +63,7 @@ Expects group information, with the following fields:
         "name": "admins"
     }
 
-Accepts either a `JSON` payload, in the format above, or a standard paramater payload. `name` is required. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute.
+Accepts either a `JSON` payload, in the format above, or standard form data. `name` is required. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute.
 
 ## `PUT /groups/<group name>` ##
 Expects a list of userids:
@@ -72,7 +72,7 @@ Expects a list of userids:
         "userids": ["jsmith"]
     }
 
-Accepts either a `JSON` payload, in the format above, or a standard paramater payload. `userids` is required. Replaces current users with the new list. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute. Will return `404` if group doesn't already exist.
+Accepts either a `JSON` payload, in the format above, or standard form data. `userids` is required. Replaces current users with the new list. Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute. Will return `404` if group doesn't already exist.
 
 ## `DELETE /groups/<group name>` ##
 Succesful responses will return `{"result": true}`. Non `200` responses will contain an `error` attribute. Will return `404` if group doesn't already exist.
