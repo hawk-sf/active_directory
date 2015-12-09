@@ -1,5 +1,5 @@
 # Description #
-A simple Flask REST API to store, fetch, and update user/group records. Based off of specifications in [code_test](https://gist.github.com/jakedahn/3d90c277576f71d805ed). Uses SQLite as its datastore.
+A simple Flask REST API to store, fetch, and update user/group records. Based off of specifications in [code_test](https://gist.github.com/jakedahn/3d90c277576f71d805ed). Uses SQLite as its datastore. Written/tested with python 2.7.
 
 # Installation #
 After cloning the repository into a virtualenv, change into the project's root directory and install the requirements with:
